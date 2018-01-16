@@ -43,8 +43,8 @@ UFF="Descargados"
 # Configuración del proxy, solo la declaras si la usas
 # si estas directo usa
 # val=""
-http_proxy="http://pavelmc:mipassword@proxy.red.cu8080/"
-https_proxy="http://pavelmc:mipassword@proxy.red.cu8080/"
+http_proxy="http://pavelmc:mipassword@proxy.red.cu:8080/"
+https_proxy="http://pavelmc:mipassword@proxy.red.cu:8080/"
 export http_proxy
 export https_proxy
 
