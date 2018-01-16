@@ -1,4 +1,4 @@
-# Script para tener un descargador masivo de videos multiusuario#
+# Script para tener un descargador masivo de videos multiusuario #
 
 ## Motivación ##
 
@@ -13,25 +13,25 @@ OJO: El user debe eliminar el URL de la lista una vez descargado o el video ser�
 ## Pre-requisitos ##
 
 * Tener instalado la última versión de [youtube-dl](https://github.com/rg3/youtube-dl/) no se vale la del repositorio, la última...
-* Un server Linux, no importa el OS.
+* Un server Linux, no importa el sabor.
 * Múltiples usuarios que acceden al server a sus carpetas personales (ssh/ftp/smb, el protocolo no importa) o incluso a carpetas compartidas públicas en la red; la lógica es que tiene que existir una carpeta padre dentro de la que hay carpetas de usuarios.
 * Estas carpetas de usuarios tendrán un directorio donde pondremos las cosa a descargar y descargadas.
 * Un fichero .txt que contendrá las URL de video de youtube y todos los otros servicios que youtube-dl soporta.
 
 **Notas:**
-# Este script no maneja los permisos, el esquema de permisos es muy particular de cada sysadmin/situación.
-# Este script asume que tiene permisos de lectura y escritura en TODOS los directorios de usuario.
-# Este script se distribuye con un ejemplo de directorios creados en un zip con ficheros de descargas con videos cortos en youtube para ejemplo.
-# Se asume que el script es llamado cada cierto tiempo desde cron para ejecutarlo, el chequea y si ya existe ejecutándose muere.
+* Este script no maneja los permisos, el esquema de permisos es muy particular de cada sysadmin/situación.
+* Este script asume que tiene permisos de lectura y escritura en TODOS los directorios de usuario.
+* Este script se distribuye con un ejemplo de directorios creados en un zip con ficheros de descargas con videos cortos en youtube para ejemplo.
+* Se asume que el script es llamado cada cierto tiempo desde cron para ejecutarlo, el chequea y si ya existe ejecutándose muere.
 
 ## Probarlo... ##
 
-# Descargue o clone el repositorio.
-# Extraiga el script ytdl.sh, dele permisos de ejecución y pongalo en un lugar que usted o el user que ejecutará pueda acceder (/usr/local/bin es un buen lugar por ejemplo)
-# Extraiga el comprimido Users.tar.gz en /tmp/ytdl
-# Deberá tener una carpeta llamada ytdl (camino completo /tmp/ytdl/Users)
-# Ejecute el script (ytdl.sh)
-# Verifique el progreso en /tmp/ytdl.log
+* Descargue o clone el repositorio.
+* Extraiga el script ytdl.sh, dele permisos de ejecución y pongalo en un lugar que usted o el user que ejecutará pueda acceder (/usr/local/bin es un buen lugar por ejemplo)
+* Extraiga el comprimido Users.tar.gz en /tmp/ytdl
+* Deberá tener una carpeta llamada ytdl (camino completo /tmp/ytdl/Users)
+* Ejecute el script (ytdl.sh)
+* Verifique el progreso en /tmp/ytdl.log
 
 Y... si todo funciona... verá una pila de videos cómicos en sus respectivas carpetas de menos de 30 segundos cada uno...
 
